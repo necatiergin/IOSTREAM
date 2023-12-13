@@ -1,14 +1,18 @@
 #include <fstream>
 #include <iostream>
 
-using namespace std;
-
 int main()
 {
-	ifstream ifs{ "abbaa.txt" };
+	std::ifstream ifs{ "boooo.txt" };
+
+	//if (!ifs.is_open()) {
+	//if (ifs.fail()) {
+	//if (!ifs.good()) {
 	if (!ifs) {
-		cerr << "dosya acilamadi\n";
+		std::cerr << "cannot open file\n";
 		return 1;
 	}
-	cout << "dosya acildi\n";
+
+	std::cout << "file opened!\n";
+
 }
