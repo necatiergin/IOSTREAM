@@ -1,30 +1,30 @@
 #include <fstream>
 #include <iostream>
 
-
-using namespace std;
-
 int main()
 {
-	ifstream ifs{ ali.txt" };
+	std::ifstream ifs{"ali.txt" };
 	if (!ifs) {
-		cerr << "dosya acilamadi\n";
+		std::cerr << "cannot open file\n";
 		return 1;
 	}
 
 	char c;
 	while (ifs.get(c)) {
-		cout << c;;
+		std::cout << c;
 	}
-	ifs.clear();
+	//ifs.clear();
 	ifs.close();
-	std::cout << "\nbir tusa basiniz : "; getchar();
+	std::cout << "\nbir tusa basiniz : "; 
+	std::getchar();
 
 	ifs.open("veli.txt");
-	
-	while (ifs.get(c)) {
-		cout << c;
+	if (!ifs) {
+		std::cerr << "cannot open veli.txt\n";
+		return 1;
 	}
 
+	while (ifs.get(c)) {
+		std::cout << c;
+	}
 }
-
