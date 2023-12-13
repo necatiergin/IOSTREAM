@@ -3,14 +3,13 @@
 
 int main()
 {
-	using namespace std;
-	cout << boolalpha;
+	boolalpha(std::cout);
 
-	ifstream ifs;
+	std::ofstream ofs;
 
-	std::cout << "has ifs an open file : " << ifs.is_open() << '\n';
-	ifs.open("temp.txt");
-	std::cout << "has ifs an open file : " << ifs.is_open() << '\n';
-	ifs.close();
-	std::cout << "has ifs an open file : " << ifs.is_open() << '\n';
+	std::cout << "has ofs an open file : " << ofs.is_open() << '\n';
+	ofs.open("temp.txt");
+	std::cout << "has ifs an open file : " << ofs.is_open() << '\n';
+	ofs.close();
+	std::cout << "has ifs an open file : " << ofs.is_open() << '\n';
 }
