@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iomanip>
 #include <string>
 
 int main()
@@ -21,6 +20,6 @@ int main()
 		}
 	}
 
-	cout << "your number is : " << x << "\n";
+	cout << "your number is : " << x << '\n';
 
 }
