@@ -10,10 +10,9 @@ private:
 	std::ios_base::fmtflags mflags;
 };
 
-
 int main()
 {
-	using namespace std;	
+	using namespace std;
 	{
 		fmguard _(cout);
 		cout << uppercase << left << hex << boolalpha;
@@ -21,6 +20,5 @@ int main()
 		////
 	}
 
-	cout << (10 > 5) << " " << 54701 << "\n";
-
+	cout << (10 > 5) << " " << 54701 << '\n';
 }
