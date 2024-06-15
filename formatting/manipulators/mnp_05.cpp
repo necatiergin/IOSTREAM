@@ -16,7 +16,7 @@ int main()
 	{
 		fmguard _(cout);
 		cout << uppercase << left << hex << boolalpha;
-		cout << (10 > 5) << " " << 54701 << "\n";
+		cout << (10 > 5) << " " << 54701 << '\n';
 		////
 	}
 
