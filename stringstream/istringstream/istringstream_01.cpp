@@ -6,7 +6,7 @@ int main()
 	using namespace std;
 
 	string sline;
-	cout << "bir cumle girin: ";
+	cout << "enter a sentence: ";
 	getline(cin, sline);
 	istringstream iss(sline);
 	string word;
