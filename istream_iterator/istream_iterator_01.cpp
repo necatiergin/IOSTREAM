@@ -7,9 +7,9 @@
 int main()
 {
 	using namespace std;
-	ifstream ifs{ "isimler.txt" };
+	ifstream ifs{ "names.txt" };
 	if (!ifs) {
-		cerr << "dosya acilamadi\n";
+		cerr << "cannot open file\n";
 		return 1;
 	}
 	//vector<string> svec{ istream_iterator<string>{ifs}, istream_iterator<string>{} };
