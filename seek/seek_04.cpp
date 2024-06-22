@@ -7,17 +7,17 @@ int main()
 
 	ifstream ifs{ "primes.dat", ios::binary };
 	if (ifs.fail()) {
-		cerr << "acilamadi\n";
+		cerr << "cannot open file\n";
 		return 1;
 	}
 
 	int n{};
-	cout << "kacinci asal sayi : ";
+	cout << "enter the index of the prime number : ";
 	cin >> n;
 
 	ifs.seekg((n - 1) * sizeof(int), ios::beg);
 	int ival;
 	ifs.read(reinterpret_cast<char*>(&ival), sizeof(int));
-	cout << "okunan byte sayisi: " << ifs.gcount() << '\n';
-	cout << n << ". asal sayi: " << ival << '\n';
+	cout << "number of bytes read : " << ifs.gcount() << '\n';
+	cout << n << ". prime : " << ival << '\n';
 }
