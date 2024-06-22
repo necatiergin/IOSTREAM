@@ -7,7 +7,7 @@ int main()
 	using namespace std;
 
 	string str;
-	cout << "enter yor numbers: ";
+	cout << "enter your numbers: ";
 	getline(cin, str);
 
 	istringstream iss{ str };
