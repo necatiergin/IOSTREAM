@@ -7,13 +7,13 @@ int main()
 {
 	using namespace std;
 
-	ifstream ifs{ "asal.txt" };
+	ifstream ifs{ "primes.txt" };
 	if (!ifs) {
-		cerr << "dosya acilamadi\n";
+		cerr << "cannot open file\n";
 		return 1;
 	}
 
 	vector<int> ivec{ istream_iterator<int>(ifs), istream_iterator<int>() };
 
-	std::cout << ivec.size() << "\n";
+	std::cout << ivec.size() << '\n';
 }
