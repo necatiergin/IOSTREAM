@@ -2,7 +2,7 @@
 
 int main()
 {
-	using namespace std;
+	using std::cin, std::cout, std::hex, std::uppercase;
 	int x{};
 
 	cout << hex << uppercase;
