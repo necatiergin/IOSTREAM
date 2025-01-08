@@ -1,5 +1,4 @@
-//örnek ostream manipülatörleri
-
+//ostream manipulator examples
 #include <ostream>
 
 std::ostream& Boolalpha(std::ostream& os)
