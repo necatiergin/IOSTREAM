@@ -7,24 +7,24 @@
 
 int main()
 {
-	using namespace std;
+	using std::cout, std::cin, std::string;
 
 	string str;
 	cout << "enter a sentence: ";
 	getline(cin, str);
 
-	istringstream iss{ str };
+	std::istringstream iss{ str };
 
 	string word;
 
 	int cnt{};
 
-	vector<string> svec;
+	std::vector<string> svec;
 	while (iss >> word) {
-		cout << setw(2) << ++cnt << " " << word << '\n';
+		std::cout << std::setw(2) << ++cnt << " " << word << '\n';
 		svec.push_back(std::move(word));
 	}
 
 	sort(begin(svec), end(svec));
-	std::copy(svec.begin(), svec.end(), ostream_iterator<string>{cout, " "});
+	std::copy(svec.begin(), svec.end(), std::ostream_iterator<string>{cout, " "});
 }
