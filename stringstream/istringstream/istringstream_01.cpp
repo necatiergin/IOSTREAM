@@ -3,13 +3,11 @@
 
 int main()
 {
-	using namespace std;
-
-	string sline;
-	cout << "enter a sentence: ";
-	getline(cin, sline);
-	istringstream iss(sline);
-	string word;
+	std::string sline;
+	std::cout << "enter a sentence: ";
+	getline(std::cin, sline);
+	std::istringstream iss(sline);
+	std::string word;
 	while (iss >> word)
-		cout << word << '\n';
+		std::cout << word << '\n';
 }
