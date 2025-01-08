@@ -25,13 +25,11 @@ void display_state(const std::ios& s)
 
 int main()
 {
-	using namespace std;
-
-	display_state(cin);
+	display_state(std::cin);
 
 	int ival;
-	cout << "enter an integer: ";
-	cin >> ival;
+	std::cout << "enter an integer: ";
+	std::cin >> ival;
 
-	display_state(cin);
+	display_state(std::cin);
 }
