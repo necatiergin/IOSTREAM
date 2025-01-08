@@ -1,9 +1,9 @@
 #include <iostream>
 
-using namespace std;
-
 int main()
 {
+	using std::cout, std::ios;
+
 	double dval = 13.76515;
 	//ios::floatfield
 	//ios::fixed
@@ -14,6 +14,5 @@ int main()
 	cout << "ios::fixed : " << (cout.flags() & ios::fixed ? "set" : "unset") << '\n';
 	cout << "ios::scientific : " << (cout.flags() & ios::scientific ? "set" : "unset") << '\n';
 
-	cout << "dval = " << dval << "\n";
+	cout << "dval = " << dval << '\n';
 }
-
