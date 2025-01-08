@@ -3,14 +3,14 @@
 
 int main()
 {
-	using namespace std;
+	using std::cout, std::cin, std::hex, std::oct;
 
 	int x;
 
 	cout << "enter an integer: ";
 	cin >> x;
 
-	ostringstream oss;
+	std::ostringstream oss;
 
 	oss << x << "|" << hex << x << "|" << oct << x << "|";
 
