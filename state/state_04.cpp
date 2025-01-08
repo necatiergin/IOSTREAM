@@ -3,7 +3,7 @@
 
 int main()
 {
-	using namespace std;
+	using std::cout, std::cin, std::string;
 
 	int x{};
 
@@ -21,5 +21,4 @@ int main()
 	}
 
 	cout << "your number is : " << x << '\n';
-
 }
