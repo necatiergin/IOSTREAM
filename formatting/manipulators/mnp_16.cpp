@@ -3,8 +3,8 @@
 
 int main()
 {
-	using namespace std;
-	
+	using std::cout, std::quoted;
+
 	cout << quoted("necati ergin") << '\n';
 	cout << quoted("\"selami\"") << '\n';
 
