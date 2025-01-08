@@ -2,12 +2,12 @@
 
 int main()
 {
-	using namespace std;
+	using std::cout, std::cin;
 
 	int x{};
 
 	cout << "enter a number: ";
-	cout << boolalpha;
+	cout << std::boolalpha;
 	cin >> x;
 
 	cout << "good : " << cin.good() << '\n';
