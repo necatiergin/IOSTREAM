@@ -2,7 +2,7 @@
 
 int main()
 {
-	using namespace std;
+	using std::cout, std::ios;
 
 	cout.setf(ios::hex, ios::basefield);
 	cout << "ios::dec : " << (cout.flags() & ios::dec ? "set" : "unset") << '\n';
