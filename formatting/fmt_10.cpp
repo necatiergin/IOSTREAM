@@ -9,9 +9,10 @@ int main()
 	
 	std::ofstream ofs{ "out.txt" };
 	if (!ofs) {
-		std::cerr << "out.txt dosyasi olusturulamadi\n";
+		std::cerr << "cannot create file\n";
 		exit(EXIT_FAILURE);
 	}
+	
 	ofs.copyfmt(cout);
 
 	ofs << 54807 << ' ' << (10 > 20);
