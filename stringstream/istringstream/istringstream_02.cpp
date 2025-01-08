@@ -5,7 +5,7 @@
 
 int main()
 {
-	using namespace std;
+	using std::istringstream, std::string, std::cout, std::setw;
 
 	istringstream iss{ "Let the ruling classes tremble at a communistic revolution. "
 		"The proletarians have nothing to lose but their chains. "
