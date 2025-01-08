@@ -17,10 +17,8 @@ private:
 
 int main()
 {
-	using namespace std;
-
 	int x = 10, y = 20, z = 40;
 
-	cout << x << sp{ 15 } << y << sp{ 37 } << z;
+	std::cout << x << sp{ 15 } << y << sp{ 37 } << z;
 
 }
