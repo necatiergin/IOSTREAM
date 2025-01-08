@@ -2,7 +2,7 @@
 
 int main()
 {
-	using namespace std;
+	using std::cin, std::cout;
 
 	//if (cin)
 	if (cin.good())
