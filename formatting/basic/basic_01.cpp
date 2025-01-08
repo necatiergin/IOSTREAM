@@ -2,7 +2,7 @@
 
 int main()
 {
-	using namespace std;
+	using std::cout, std::ios;
 
 	int x = 15;
 
