@@ -11,11 +11,9 @@ ignore_line(std::istream& is)
 
 int main()
 {
-	using namespace std;
-
-	istringstream iss{ "ali\nveli\nhasan" };
-	string str;
+	std::istringstream iss{ "ali\nveli\nhasan" };
+	std::string str;
 
 	iss >> ignore_line >> ignore_line >> str;
-	cout << "[" << str << "]\n";
+	std::cout << "[" << str << "]\n";
 }
