@@ -4,13 +4,11 @@
 
 int main()
 {
-	using namespace std;
+	std::string str;
+	std::cout << "enter your numbers: ";
+	std::getline(std::cin, str);
 
-	string str;
-	cout << "enter your numbers: ";
-	getline(cin, str);
-
-	istringstream iss{ str };
+	std::istringstream iss{ str };
 
 	int ival{};
 	int sum{};
