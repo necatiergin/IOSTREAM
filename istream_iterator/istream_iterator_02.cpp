@@ -5,15 +5,13 @@
 
 int main()
 {
-	using namespace std;
-
-	ifstream ifs{ "primes.txt" };
+	std::ifstream ifs{ "primes.txt" };
 	if (!ifs) {
-		cerr << "cannot open file\n";
+		std::cerr << "cannot open file\n";
 		return 1;
 	}
 
-	vector<int> ivec{ istream_iterator<int>(ifs), istream_iterator<int>() };
+	std::vector<int> ivec{ std::istream_iterator<int>(ifs), std::istream_iterator<int>() };
 
-	std::cout << ivec.size() << '\n';
+	std::cout << "size = " << ivec.size() << '\n';
 }
