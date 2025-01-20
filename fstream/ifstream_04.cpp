@@ -6,9 +6,9 @@
 
 int main()
 {
-	std::ifstream ifs{ "ali.txt" };
+	std::ifstream ifs{ "notlar.txt" };
 	if (!ifs) {
-		std::cerr << "dosya acilamadi\n";
+		std::cerr << "cannot open file\n";
 		return 1;
 	}
 
@@ -21,11 +21,11 @@ int main()
 	}
 
 	std::vector<std::pair<char, int>> cvec{ begin(cmap), end(cmap) };
-	sort(begin(cvec), end(cvec), [](const auto& p1, const auto& p2) 
+	sort(begin(cvec), end(cvec), [](const auto& p1, const auto& p2)
 		{
-			return p1.second > p2.second; 
+			return p1.second > p2.second;
 		});
-	
+
 	for (const auto [letter, count] : cvec)
 		std::cout << letter << "  " << count << '\n';
 }
