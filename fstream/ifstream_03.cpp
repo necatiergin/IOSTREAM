@@ -4,7 +4,10 @@
 int main()
 {
 	std::ifstream ifs{ "temp.txt" };
-	//code
+	if (!ifs) {
+		std::cerr << "cannot open file\n";
+		return 1;
+	}
 	//std::cout << ifs.rdbuf();
 
 	char c;
