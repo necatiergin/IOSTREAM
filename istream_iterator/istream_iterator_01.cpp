@@ -7,6 +7,7 @@
 int main()
 {
 	using namespace std;
+
 	ifstream ifs{ "names.txt" };
 	if (!ifs) {
 		cerr << "cannot open file\n";
