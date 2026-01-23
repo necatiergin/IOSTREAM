@@ -3,17 +3,16 @@
 
 int main()
 {
-	using namespace std;
-	ostream ostr{ cout.rdbuf() };
+	std::ostream ostr{ std::cout.rdbuf() };
 
-	ostr.setf(ios::boolalpha | ios::uppercase | ios::showbase);
-	ostr.setf(ios::hex, ios::basefield);
-	ostr.setf(ios::scientific, ios::floatfield);
+	ostr.setf(std::ios::boolalpha | std::ios::uppercase | std::ios::showbase);
+	ostr.setf(std::ios::hex, std::ios::basefield);
+	ostr.setf(std::ios::scientific, std::ios::floatfield);
 	ostr.precision(2);
 
 	int x = 47'802, y = 57'054;
 	double dval = 4187.7233;
 
-	cout << x << " " << y << " " << dval << " " << (x > y) << '\n';
+	std::cout << x << " " << y << " " << dval << " " << (x > y) << '\n';
 	ostr << x << " " << y << " " << dval << " " << (x > y) << '\n';
 }
