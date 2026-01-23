@@ -3,15 +3,12 @@
 
 int main()
 {
-    using namespace std;
+    std::ostringstream oss;
 
-    ostringstream oss;
-
-    auto cout_buff = cout.rdbuf();
-    cout.rdbuf(oss.rdbuf());
-    cout << "necati ergin";
-
-    cout.rdbuf(cout_buff);
-    cout << "ahmet ibrahim aksoy\n";
-    cout << "local content: " << oss.str() << '\n';
+    auto cout_buff = std::cout.rdbuf();
+    std::cout.rdbuf(oss.rdbuf());
+    std::cout << "necati ergin";
+    std::cout.rdbuf(cout_buff);
+    std::cout << "ahmet ibrahim aksoy\n";
+    std::cout << "local content: " << oss.str() << '\n';
 }
