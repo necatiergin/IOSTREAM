@@ -1,15 +1,12 @@
 #include <fstream>
 #include <iostream>
-#include "nutility.h"
-
+#include "nutility.h"  //isprime
 
 int main()
 {
-	using namespace std;
-
-	ofstream ofs{ "primes.dat", ios::binary };
+	std::ofstream ofs{ "primes.dat", std::ios::binary };
 	if (ofs.fail()) {
-		cerr << "dosya olusturulamadi\n";
+		std::cerr << "dosya olusturulamadi\n";
 		return 1;
 	}
 
