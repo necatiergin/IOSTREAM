@@ -6,14 +6,12 @@
 
 int main()
 {
-	using namespace std;
-
-	ifstream ifs{ "names.txt" };
+	std::ifstream ifs{ "names.txt" };
 	if (!ifs) {
-		cerr << "cannot open file\n";
+		std::cerr << "cannot open file\n";
 		return 1;
 	}
-	//vector<string> svec{ istream_iterator<string>{ifs}, istream_iterator<string>{} };
-	vector<string> svec{ istream_iterator<string>{ifs}, {} };
-	copy(begin(svec), end(svec), ostream_iterator<string>{cout, " "});
+	//std::vector<std::string> svec{ std::istream_iterator<std::string>{ifs}, {} };
+	std::vector<std::string> svec{ std::istream_iterator<std::string>{ifs}, {} };
+	copy(begin(svec), end(svec), std::ostream_iterator<std::string>{std::cout, " "});
 }
