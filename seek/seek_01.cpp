@@ -11,16 +11,20 @@ int main()
 
     iss >> str;
     cout << "[" << str << "]\n";
-    iss.seekg(0, ios_base::beg); 
+    
+    iss.seekg(0, ios_base::beg);
     iss >> str;
     cout << "[" << str << "]\n";
-    iss.seekg(1, ios_base::cur); 
+    
+    iss.seekg(1, ios_base::cur);
     iss >> str;
     cout << "[" << str << "]\n";
-    iss.seekg(-6, ios_base::cur); 
+    
+    iss.seekg(-6, ios_base::cur);
     iss >> str;
     cout << "[" << str << "]\n";
-    iss.seekg(-6, ios_base::end); 
+    
+    iss.seekg(-6, ios_base::end);
     iss >> str;
     cout << "[" << str << "]\n";
 }
