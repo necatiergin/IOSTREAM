@@ -4,8 +4,6 @@
 
 int main()
 {
-	using namespace std;
-
-	cout << "enter the numbers: " <<
+	std::cout << "enter the numbers: " <<
 		accumulate(istream_iterator<int>{cin}, {}, 0) << '\n';
 }
