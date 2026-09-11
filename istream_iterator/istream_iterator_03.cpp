@@ -5,5 +5,5 @@
 int main()
 {
 	std::cout << "enter the numbers: " <<
-		accumulate(istream_iterator<int>{cin}, {}, 0) << '\n';
+		accumulate(std::istream_iterator<int>{std::cin}, {}, 0) << '\n';
 }
